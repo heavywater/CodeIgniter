@@ -1,4 +1,4 @@
-class Migration_Add_User_Name_Fields extends CI_Migration {
+class Migration_Add_user_name_fields extends CI_Migration {
 
   public function up()
   {

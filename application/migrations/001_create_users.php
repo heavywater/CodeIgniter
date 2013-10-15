@@ -1,4 +1,4 @@
-class Migration_Create_Users extends CI_Migration {
+class Migration_Create_users extends CI_Migration {
 
   public function up()
   {
