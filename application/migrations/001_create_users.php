@@ -13,11 +13,13 @@ class Migration_Create_users extends CI_Migration {
       ),
       'username' => array(
         'type' => 'VARCHAR',
-        'constraint' => '100'
+        'constraint' => '100',
+        'null' => FALSE
       ),
       'password' => array(
         'type' => 'VARCHAR',
-        'constraint' => '100'
+        'constraint' => '100',
+        'null' => FALSE
       )
     );
 
