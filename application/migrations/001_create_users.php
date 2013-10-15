@@ -1,11 +1,24 @@
+<?php
+
 class Migration_Create_users extends CI_Migration {
 
   public function up()
   {
     $fields = array(
-      'id INT(11) UNSIGNED NOT NULL AUTO_INCREMENT',
-      'username VARCHAR(10) DEFAULT NULL',
-      'password VARCHAR(50) DEFAULT NULL'
+      'id' => array(
+        'type' => 'INT',
+        'constraint' => 11,
+        'unsigned' => TRUE,
+        'auto_increment' => TRUE
+      ),
+      'username' => array(
+        'type' => 'VARCHAR',
+        'constraint' => '100'
+      ),
+      'password' => array(
+        'type' => 'VARCHAR',
+        'constraint' => '100'
+      )
     );
 
     $this->dbforge->add_field($fields);
